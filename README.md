@@ -85,7 +85,7 @@ These dotfiles are meant to be basic, and fit everything that I need in my daily
 * An application launcher, file exporer, ssh window, and window switcher all within Rofi.
 * A notification center/viewer utilizing SwayNC
 * A custom discord theme, utilizing Equicord \
-Discord must be manually patched by running the command
+Discord. Must be manually patched by running the command
 ```
 sudo Equilotl
 ```
