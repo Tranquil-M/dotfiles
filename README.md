@@ -4,19 +4,53 @@ Welcome to...
 
 This is a repository of my preferred hyprland setup, which currently can only be used on arch-based distrobutions.
 
+## How does it look?
+
+### Window
+
+![Default Color Scheme](https://raw.githubusercontent.com/Tranquil-M/dotfiles/refs/heads/master/Sample/Blue%20Accent%20Window.png)
+
+### Rofi
+
+![Application Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Rofi.png?raw=true)
+
+### Wallpaper Selector
+
+![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Wallpaper%20Selector.png?raw=true)
+
+### Notification Manager
+
+![SwayNC](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20NC.png?raw=true)
+
+### Other Wallpaper Colors
+
+![Snoopy Yellow](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Snoopy%20Yellow.png?raw=true)
+
+![Cat Pink](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Pink.png?raw=true)
+
+![Cat Club Green](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Club%20Green.png?raw=true)
+
 ## Installation
 
-1. Install the git cli tool\
-Arch Linux:\
-`pacman -Sy git`
+1. Install the git cli tool
+
+```Bash
+pacman -Sy git
+```
 
 2. Clone this repository into your home directory\
-`git clone https://github.com/Tranquil-M/dotfiles`
+```
+git clone https://github.com/Tranquil-M/dotfiles
+```
 
 3. Run the install script and let it to all the dirty work.\
-``~/dotfiles/install/install.sh`
+```
+~/dotfiles/install/install.sh
+```
 
 ## Please note:
+
+Due to the way GNU Stow works, cloning this repository into a hidden folder will remove Stow access to symlinks. You can make symlinks yourself, but it is significantly more difficult. 
 
 The install script's package install capability is currently only functional for Arch Based distros. The script has functionallity for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself!
 
@@ -38,18 +72,23 @@ These dotfiles are meant to be basic, and fit everything that I need in my daily
 
 * A screenshot utility, using Grim, Slurp, and Satty. All screenshots are automatically saved into \
 `~/Pictures/Screenshots`
-* A wallpaper switcher that utilizes Matugen to change the color scheme of other applications. Wallpapers can be added easily by putting png, jpg, jepg, or webp files into\
+* A wallpaper switcher that utilizes Matugen to change the color scheme of other applications. Wallpapers can be added easily by putting .png, .jpg, .jpeg, or .webp files into\
 `~/Pictures/Wallpapers`
 * An application launcher, file exporer, ssh window, and window switcher all within Rofi.
 * A notification center/viewer utilizing SwayNC
 * A custom discord theme, utilizing Equicord. \
-Discord must be manually patched by running the command \
-`sudo Equilotl`
+Discord must be manually patched by running the command
+```
+sudo Equilotl
+```
 * NvChad, the best NeoVim distrobution (imo)
+* Exa, a better list command! (love this sm)
+* Zoxide, a better cd command! (LOVE this sm)
 
 ## Packages
 
 * [NvChad](https://nvchad.com/)
+* [NvChad Pywal Support](https://github.com/nvchad/pywal)
 * [Equicord](https://equicord.org/)
 * [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
 * [Rofi](https://github.com/davatorium/rofi)
@@ -60,4 +99,6 @@ Discord must be manually patched by running the command \
 * [Grim](https://github.com/emersion/grim)
 * [Slurp](https://github.com/emersion/slurp)
 * [GNU Stow](https://www.gnu.org/software/stow/)
+* [Zoxide](https://github.com/ajeetdsouza/zoxide)
+* [Exa](https://github.com/ogham/exa)
 
