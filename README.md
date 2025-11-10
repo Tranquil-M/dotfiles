@@ -60,3 +60,4 @@ Discord must be manually patched by running the command \
 * [Grim](https://github.com/emersion/grim)
 * [Slurp](https://github.com/emersion/slurp)
 * [GNU Stow](https://www.gnu.org/software/stow/)
+

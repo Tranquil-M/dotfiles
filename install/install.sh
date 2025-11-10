@@ -91,7 +91,8 @@ fi
 echo "Linking dotfiles using stow..."
 for dir in $(find . -mindepth 1 -maxdepth 1 -type d \
               -not -name '.git' \
-              -not -name 'install'); do
+              -not -name 'install' \
+              -not -name 'Sample'); do
   echo "→ Stowing $dir"
   stow --target="$HOME" "$dir"
 done
