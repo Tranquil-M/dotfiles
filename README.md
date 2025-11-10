@@ -2,7 +2,7 @@ Welcome to...
 
 # Tranquil's Hyprland Dot Files!
 
-This is a repository of my preferred hyprland setup, which currently can only be used on arch-based distrobutions.
+This is a repository of my preferred hyprland setup, which currently has only been tested on Arch Based Distributions
 
 ## How does it look?
 
@@ -38,16 +38,16 @@ This is a repository of my preferred hyprland setup, which currently can only be
 
 1. Install the git cli tool
 
-```Bash
+```
 pacman -Sy git
 ```
 
-2. Clone this repository into your home directory\
+2. Clone this repository into your home directory
 ```
 git clone https://github.com/Tranquil-M/dotfiles
 ```
 
-3. Run the install script and let it to all the dirty work.\
+3. Run the install script and let it to all the dirty work.
 ```
 ~/dotfiles/install/install.sh
 ```
@@ -74,10 +74,14 @@ You could always read it yourself, but I digress. Here's how it works:
 
 These dotfiles are meant to be basic, and fit everything that I need in my daily drive. However, there are some unique features that I would like to share!
 
-* A screenshot utility, using Grim, Slurp, and Satty. All screenshots are automatically saved into \
-`~/Pictures/Screenshots`
-* A wallpaper switcher that utilizes Matugen to change the color scheme of other applications. Wallpapers can be added easily by putting .png, .jpg, .jpeg, or .webp files into\
-`~/Pictures/Wallpapers`
+* A screenshot utility, using Grim, Slurp, and Satty. All screenshots are automatically saved into
+```
+~/Pictures/Screenshots
+```
+* A wallpaper switcher that utilizes Matugen to change the color scheme of other applications. Wallpapers can be added easily by putting .png, .jpg, .jpeg, or .webp files into
+```
+~/Pictures/Wallpapers
+```
 * An application launcher, file exporer, ssh window, and window switcher all within Rofi.
 * A notification center/viewer utilizing SwayNC
 * A custom discord theme, utilizing Equicord \
