@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Detect OS / package manager
 PKG_FILE=""
 PKG_INSTALL_CMD=""
 PKG_UPDATE_CMD=""
@@ -22,38 +21,42 @@ if command -v pacman >/dev/null 2>&1; then
     rm -rf "$temp_dir"
   fi
 
-elif command -v apt-get >/dev/null 2>&1; then
-  echo "Detected Debian/Ubuntu-based system (apt)"
-  PKG_FILE="packages-debian.txt"
-  PKG_INSTALL_CMD="sudo apt-get install -y"
-  PKG_UPDATE_CMD="sudo apt-get update"
-
-elif command -v brew >/dev/null 2>&1; then
-  echo "Detected macOS or Linuxbrew (brew)"
-  PKG_FILE="packages-macos.txt"
-  PKG_INSTALL_CMD="brew install"
-  PKG_UPDATE_CMD="brew update"
-
 else
-  # Install Homebrew automatically if no other manager found
-  echo "No package manager detected — attempting to install Homebrew..."
+  echo "Sorry, but this script currently only functions for Arch based distributions at the moment!"
+  exit 1
 
-  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-  # Set up brew in PATH
-  if [[ -d /home/linuxbrew/.linuxbrew ]]; then
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-  elif [[ -d /opt/homebrew ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-  else
-    echo "Could not find Homebrew after installation."
-  fi
-
-  PKG_FILE="packages-macos.txt"
-  PKG_INSTALL_CMD="brew install"
-  PKG_UPDATE_CMD="brew update"
-fi
-
+#
+#elif command -v apt-get >/dev/null 2>&1; then
+#  echo "Detected Debian/Ubuntu-based system (apt)"
+#  PKG_FILE="packages-debian.txt"
+#  PKG_INSTALL_CMD="sudo apt-get install -y"
+#  PKG_UPDATE_CMD="sudo apt-get update"
+#
+#elif command -v brew >/dev/null 2>&1; then
+#  echo "Detected macOS or Linuxbrew (brew)"
+#  PKG_FILE="packages-macos.txt"
+#  PKG_INSTALL_CMD="brew install"
+#  PKG_UPDATE_CMD="brew update"
+#
+#else
+#  # Install Homebrew automatically if no other manager found
+#  echo "No package manager detected — attempting to install Homebrew..."
+#
+#  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#
+#  if [[ -d /home/linuxbrew/.linuxbrew ]]; then
+#    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#  elif [[ -d /opt/homebrew ]]; then
+#    eval "$(/opt/homebrew/bin/brew shellenv)"
+#  else
+#    echo "Could not find Homebrew after installation."
+#  fi
+#
+#  PKG_FILE="packages-macos.txt"
+#  PKG_INSTALL_CMD="brew install"
+#  PKG_UPDATE_CMD="brew update"
+#fi
+#
 # Install packages if package list exists
 if [[ -f "$PKG_FILE" ]]; then
   echo "Installing packages from $PKG_FILE..."
@@ -102,7 +105,6 @@ echo "You may need to restart your system for changes to take effect."
 
 while true; do
     read -p "Do you want to reboot the system? (y/n): " answer
-    # Convert to lowercase
     answer=${answer,,}
 
     if [[ "$answer" == "y" ]]; then
