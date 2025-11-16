@@ -1143,9 +1143,6 @@
         "SongLink": {
             "enabled": true
         },
-        "Boo": {
-            "enabled": false
-        },
         "CleanUserArea": {
             "enabled": true
         },
@@ -1158,6 +1155,12 @@
             "maxSize": 10,
             "flakesPerSecond": 5,
             "speed": 50
+        },
+        "Ghosted": {
+            "enabled": false
+        },
+        "QuickThemeSwitcher": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1171,7 +1174,7 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": false,
-        "settingsSyncVersion": 1762662679943
+        "settingsSyncVersion": 1763100443184
     },
     "ignoreResetWarning": false,
     "userCssVars": {}
