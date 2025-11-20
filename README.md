@@ -2,7 +2,7 @@ Welcome to...
 
 # Tranquil's Hyprland Dot Files!
 
-This is a repository of my preferred hyprland setup, which currently has only been tested on Arch Based Distributions
+This is a repository of my preferred hyprland setup, which is primarly used on Arch-based Distributions!
 
 ## How does it look?
 
@@ -47,14 +47,14 @@ pacman -Sy git
 git clone https://github.com/Tranquil-M/dotfiles
 ```
 
-3. Run the install script and let it to all the dirty work.
+3. Run the install script and let it do all the dirty work.
 ```
 ~/dotfiles/install/install.sh
 ```
 
 ## Please note:
 
-The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself!
+The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself! The script will create the dotfiles for you.
 
 ## How does the install script work?
 
@@ -72,7 +72,7 @@ You could always read it yourself, but I digress. Here's how it works:
 
 These dotfiles are meant to be basic, and fit everything that I need in my daily drive. However, there are some unique features that I would like to share!
 
-* A screenshot utility, using Grim, Slurp, and Satty. All screenshots are automatically saved into
+* A screenshot utility using Grim, Slurp, and Satty. All screenshots are automatically saved into
 ```
 ~/Pictures/Screenshots
 ```
