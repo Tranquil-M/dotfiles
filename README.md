@@ -54,8 +54,6 @@ git clone https://github.com/Tranquil-M/dotfiles
 
 ## Please note:
 
-Due to the way GNU Stow works, cloning this repository into a hidden folder will remove Stow access to symlinks. You can make symlinks yourself, but it is significantly more difficult. 
-
 The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself!
 
 ## How does the install script work?
@@ -64,11 +62,11 @@ You could always read it yourself, but I digress. Here's how it works:
 
 1. Detects the current operating system and package manager, (includes yay on arch), and if the package manager doesn't currently exist, it installs it onto the system.
 
-2. Looks for a package file in the same directory as the install script, eg. `packages-arch.txt`, then scans the package manager's package repository for said packages. If it finds them, it installs them. In the case of arch linux, it first scans pacman, then the AUR if it can't find it.
+2. Looks for a package file in the `packages` sub directory, eg. `packages-arch.txt`, then scans the package manager's package repository for said packages. If it finds them, it installs them. In the case of arch linux, it first scans pacman, then the AUR if it can't find it.
 
 3. Uses GNU Stow to create symlinks for each directory saved into the 'dotfiles' repository.
 
-4. Prompts you to restart your system (optional).
+4. Prompts you to restart your system.
 
 ## Features
 
@@ -95,6 +93,7 @@ sudo Equilotl
 * An on screen display for backlight and volume, using Swayosd
 * A clean lockscreen using hyprlock
 * A minimal logout menu using wlogout
+* A firefox color theme using pywal-fox
 
 ## Bindings
 
@@ -211,4 +210,5 @@ Super + Shift + 1-9
 * [Wlogout](https://github.com/ArtsyMacaw/wlogout)
 * [Kitty](https://sw.kovidgoyal.net/kitty/)
 * [Btop](https://github.com/aristocratos/btop)
+* [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 

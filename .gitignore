@@ -1,3 +1,3 @@
-.config/Equicord/equicord.asar
-.config/Equicord/MessageLoggerData
-Pictures/Screenshots/*
+stow/.config/Equicord/equicord.asar
+stow/.config/Equicord/MessageLoggerData
+stow/Pictures/Screenshots/*
