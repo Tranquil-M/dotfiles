@@ -92,9 +92,27 @@ echo "Linking dotfiles using stow..."
 cd $DOTFILES_DIR
 stow --target "$HOME" "stow"
 
+echo "Removing unneccesary dependencies..."
+if command -v pacman >/dev/null 2>&1; then
+  mapfile -t orphans < <(pacman -Qtdq 2>/dev/null || true)
+
+  if [ ${#orphans[@]} -eq 0 ]; then
+    echo "No orphaned packages to remove."
+  else
+    printf '%s\n' "${orphans[@]}" | sudo pacman -Rns -
+  fi
+
+elif command -v apt-get >/dev/null 2>&1; then
+  sudo apt autoremove --purge
+elif command -v brew >/dev/null 2>&1; then
+  brew autoremove
+  brew cleanup
+fi
 echo "Applying Hyprland Colorscheme..."
 cd "$HOME"
-matugen image "Pictures/Wallpapers/White-Cat.png" >/dev/null 2>&1
+if command -v matugen >/dev/null 2>&1; then
+    matugen -q image "Pictures/Wallpapers/White-Cat.png" >/dev/null 2>&1
+fi
 
 echo "Dotfiles installation complete!"
 echo "You may need to restart your system for changes to take effect."
