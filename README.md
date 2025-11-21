@@ -4,6 +4,18 @@ Welcome to...
 
 This is a repository of my preferred hyprland setup, which is primarly used on Arch-based Distributions!
 
+## Table of contents:
+| Categories    | What's shown?|
+| ------------- |:-------------:|
+| [How does it look?](#looks) | Images of the actual rice! |
+| [Installation](#install) | Directions to clone and use this repository! |
+| [How does the install script work?](#walkthrough) | A brief description of the function of the install script! |
+| [Features](#feat) | A list of features included! |
+| [Bindings](#binds) | A list of bindings! |
+| [Used Packages](#pkgs) | All packages used in this repo! |
+
+<a name="looks">
+
 ## How does it look?
 
 ### Window
@@ -34,13 +46,17 @@ This is a repository of my preferred hyprland setup, which is primarly used on A
 
 ![Cat Club Green](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Club%20Green.png?raw=true)
 
+<a name="install">
+
 ## Installation
 
 1. Install the git cli tool
-
-```
+<details open>
+  <summary>Arch Linux</summary>
+<pre>
 pacman -Sy git
-```
+</pre>
+</details>
 
 2. Clone this repository into your home directory
 ```
@@ -56,6 +72,8 @@ git clone https://github.com/Tranquil-M/dotfiles
 
 The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself! The script will create the dotfiles for you.
 
+<a name="walkthrough">
+
 ## How does the install script work?
 
 You could always read it yourself, but I digress. Here's how it works:
@@ -67,6 +85,8 @@ You could always read it yourself, but I digress. Here's how it works:
 3. Uses GNU Stow to create symlinks for each directory saved into the 'dotfiles' repository.
 
 4. Prompts you to restart your system.
+
+<a name="feat">
 
 ## Features
 
@@ -93,6 +113,8 @@ sudo Equilotl
 * A clean lockscreen using hyprlock
 * A minimal logout menu using wlogout
 * A firefox color theme using pywal-fox
+
+<a name="binds">
 
 ## Bindings
 
@@ -188,26 +210,47 @@ Super + 1-9
 Super + Shift + 1-9
 ```
 
+<a name="pkgs">
+
 ## Packages
 
 * [NvChad](https://nvchad.com/)
+|-|
 * [NvChad Pywal Support](https://github.com/nvchad/pywal)
+|-|
 * [Equicord](https://equicord.org/)
+|-|
 * [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
+|-|
 * [SwayOSD](https://github.com/ErikReider/SwayOSD)
+|-|
 * [Rofi](https://github.com/davatorium/rofi)
+|-|
 * [Rofi Theme](https://github.com/newmanls/rofi-themes-collection)
+|-|
 * [Matugen](https://github.com/InioX/matugen)
+|-|
 * [Matugen Templates](https://github.com/InioX/matugen-themes)
+|-|
 * [Satty](https://github.com/Satty-org/Satty)
+|-|
 * [Grim](https://github.com/emersion/grim)
+|-|
 * [Slurp](https://github.com/emersion/slurp)
+|-|
 * [GNU Stow](https://www.gnu.org/software/stow/)
+|-|
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
+|-|
 * [Exa](https://github.com/ogham/exa)
+|-|
 * [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
+|-|
 * [Wlogout](https://github.com/ArtsyMacaw/wlogout)
+|-|
 * [Kitty](https://sw.kovidgoyal.net/kitty/)
+|-|
 * [Btop](https://github.com/aristocratos/btop)
+|-|
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-
+|-|
