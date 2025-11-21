@@ -215,42 +215,22 @@ Super + Shift + 1-9
 ## Packages
 
 * [NvChad](https://nvchad.com/)
-|-|
 * [NvChad Pywal Support](https://github.com/nvchad/pywal)
-|-|
 * [Equicord](https://equicord.org/)
-|-|
 * [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
-|-|
 * [SwayOSD](https://github.com/ErikReider/SwayOSD)
-|-|
 * [Rofi](https://github.com/davatorium/rofi)
-|-|
 * [Rofi Theme](https://github.com/newmanls/rofi-themes-collection)
-|-|
 * [Matugen](https://github.com/InioX/matugen)
-|-|
 * [Matugen Templates](https://github.com/InioX/matugen-themes)
-|-|
 * [Satty](https://github.com/Satty-org/Satty)
-|-|
 * [Grim](https://github.com/emersion/grim)
-|-|
 * [Slurp](https://github.com/emersion/slurp)
-|-|
 * [GNU Stow](https://www.gnu.org/software/stow/)
-|-|
 * [Zoxide](https://github.com/ajeetdsouza/zoxide)
-|-|
 * [Exa](https://github.com/ogham/exa)
-|-|
 * [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
-|-|
 * [Wlogout](https://github.com/ArtsyMacaw/wlogout)
-|-|
 * [Kitty](https://sw.kovidgoyal.net/kitty/)
-|-|
 * [Btop](https://github.com/aristocratos/btop)
-|-|
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-|-|
