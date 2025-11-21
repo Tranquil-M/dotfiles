@@ -82,15 +82,14 @@ These dotfiles are meant to be basic, and fit everything that I need in my daily
 ```
 * An application launcher, file exporer, ssh window, and window switcher all within Rofi.
 * A notification center/viewer utilizing SwayNC
-* A custom discord theme, utilizing Equicord \
-Discord. Must be manually patched by running the command
+* A custom discord theme, utilizing Equicord. Discord be manually patched after every update by running the following command in the terminal:
 ```
 sudo Equilotl
 ```
 * NvChad, the best NeoVim distrobution (imo)
 * Exa, a better list command! (love this sm)
 * Zoxide, a better cd command! (LOVE this sm)
-* An on screen display for backlight and volume, using Swayosd
+* An on screen display for backlight and volume, using SwayOSD
 * A clean lockscreen using hyprlock
 * A minimal logout menu using wlogout
 * A firefox color theme using pywal-fox
