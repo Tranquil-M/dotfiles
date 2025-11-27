@@ -90,7 +90,7 @@ fi
 echo "Linking dotfiles using stow..."
 
 cd $DOTFILES_DIR
-stow --target "$HOME" "stow"
+stow --target --adopt "$HOME" "stow"
 
 echo "Removing unneccesary dependencies..."
 if command -v pacman >/dev/null 2>&1; then
