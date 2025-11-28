@@ -52,6 +52,7 @@ qt5-wayland
 qt6-wayland
 rofi
 satty
+sddm
 stow
 swaync
 swayosd

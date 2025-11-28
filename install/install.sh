@@ -94,7 +94,16 @@ stow --target "$HOME" "stow" --adopt
 
 echo "Creating custom NeoVim Chadwal Theme..."
 bash ./install/create_nvim_config.sh
-echo "Created succesfully!"
+echo "Created successfully!"
+
+echo "Installing SDDM Silent Theme..."
+cd ~
+git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
+cd SilentSDDM
+bash ./install.sh
+echo "Installed successfully!"
+cd ..
+rm -rf ./SilentSDDM
 
 echo "Removing unneccesary dependencies..."
 if command -v pacman >/dev/null 2>&1; then
