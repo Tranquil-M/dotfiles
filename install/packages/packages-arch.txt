@@ -51,6 +51,7 @@ python-watchdog
 qt5-wayland
 qt6-wayland
 rofi
+rofi-emoji
 satty
 sddm
 stow
@@ -74,6 +75,7 @@ udisks2
 unzip
 waybar
 wlogout
+wtype
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xf86-input-libinput
