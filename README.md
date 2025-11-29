@@ -113,6 +113,7 @@ sudo Equilotl
 * A clean lockscreen using hyprlock
 * A minimal logout menu using wlogout
 * A firefox color theme using pywal-fox
+* A minimal login screen utilizing SilentSddm
 
 <a name="binds">
 
@@ -234,3 +235,4 @@ Super + Shift + 1-9
 * [Kitty](https://sw.kovidgoyal.net/kitty/)
 * [Btop](https://github.com/aristocratos/btop)
 * [Pywal-Fox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+* [SilentSDDM](https://github.com/uiriansan/SilentSDDM)
