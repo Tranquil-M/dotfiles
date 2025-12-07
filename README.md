@@ -18,59 +18,54 @@ This is a repository of my preferred hyprland setup, which is primarly used on A
 
 ## How does it look?
 
-### Window
+| Window |
+| - |
+| ![Default Color Scheme](https://raw.githubusercontent.com/Tranquil-M/dotfiles/refs/heads/master/Sample/Blue%20Accent%20Window.png) | 
 
-![Default Color Scheme](https://raw.githubusercontent.com/Tranquil-M/dotfiles/refs/heads/master/Sample/Blue%20Accent%20Window.png)
+| Rofi |
+| - |
+| ![Application Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Rofi.png?raw=true) |
 
-### Rofi
+| Wallpaper Selector |
+| - |
+| ![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Wallpaper%20Selector.png?raw=true) | 
 
-![Application Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Rofi.png?raw=true)
+| Notification Manager |
+| - |
+| ![SwayNC](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20NC.png?raw=true) | 
 
-### Wallpaper Selector
+| Wlogout |
+| - |
+| ![Wlogout](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Wlogout.png?raw=true) | 
 
-![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Wallpaper%20Selector.png?raw=true)
-
-### Notification Manager
-
-![SwayNC](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20NC.png?raw=true)
-
-### Wlogout
-
-![Wlogout](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Wlogout.png?raw=true)
-
-### Other Wallpaper Colors
-
-![Snoopy Yellow](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Snoopy%20Yellow.png?raw=true)
-
-![Cat Pink](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Pink.png?raw=true)
-
-![Cat Club Green](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Club%20Green.png?raw=true)
+| Other Wallpaper Colors |
+| - |
+| ![Snoopy Yellow](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Snoopy%20Yellow.png?raw=true) ![Cat Pink](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Pink.png?raw=true) ![Cat Club Green](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Club%20Green.png?raw=true) |
 
 <a name="install">
 
 ## Installation
 
 1. Install the git cli tool
-<details open>
-  <summary>Arch Linux</summary>
-<pre>
-pacman -Sy git
-</pre>
-</details>
+    <details open>
+      <summary>Arch Linux</summary>
+      
+        sudo pacman -Sy git
+          
+    </details>
 
 2. Clone this repository into your home directory
-```
-git clone https://github.com/Tranquil-M/dotfiles
-```
+    ```bash
+    git clone https://github.com/Tranquil-M/dotfiles; cd dotfiles
+    ```
 
 3. Run the install script and let it do all the dirty work.
-```
-~/dotfiles/install/install.sh
-```
+    ```bash
+    bash ./install/install.sh
+    ```
 
-## Please note:
-
-The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself! The script will create the dotfiles for you.
+> [!NOTE]
+> The install script's package install capability is currently only functional for Arch Based distros. The script has logic for debian based distros and MacOs, however I have not input the package names for said operating systems. You can, however, just install the packages yourself! The script will create the dotfiles for you.
 
 <a name="walkthrough">
 
