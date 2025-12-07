@@ -15,3 +15,8 @@ alias clear="clear; nitchrevived"
 alias cd='z'
 PS1='[\u@\h \W]\$ '
 nitchrevived
+
+#SSH config
+eval $(ssh-agent -s)
+#Put your github private key under ~/.ssh/github and use sudo chown 600 ~/.ssh/github
+ssh-add ~/.ssh/github
