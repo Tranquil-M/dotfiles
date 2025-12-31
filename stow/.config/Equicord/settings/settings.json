@@ -296,7 +296,8 @@
             "requireModifier": false,
             "enableDoubleClickToReply": true,
             "enableDoubleClickToEdit": true,
-            "enableDeleteOnClick": true
+            "enableDeleteOnClick": true,
+            "enableTripleClickToReact": false
         },
         "MessageLatency": {
             "enabled": false
@@ -894,7 +895,11 @@
             "cacheLimit": 1000,
             "saveImages": false,
             "messageLimit": 200,
-            "hideMessageFromMessageLoggers": false
+            "hideMessageFromMessageLoggers": false,
+            "sortNewest": true,
+            "messagesToDisplayAtOnceInLogs": 100,
+            "ShowWhereMessageIsFrom": false,
+            "timeBasedCleanupMinutes": 0
         },
         "MessageTranslate": {
             "enabled": false
@@ -975,11 +980,11 @@
             "questButtonUnclaimed": "both",
             "disableQuestsEverything": false,
             "disableQuestsFetchingQuests": false,
-            "unclaimedUnignoredQuests": 7,
+            "unclaimedUnignoredQuests": 2,
             "onQuestsPage": false,
             "disableQuestsDirectMessagesTab": false,
             "disableQuestsPopupAboveAccountPanel": true,
-            "triggerQuestsRerender": false,
+            "triggerQuestsRerender": true,
             "questButtonBadgeColor": 2842239,
             "disableMembersListActivelyPlayingIcon": true,
             "disableFriendsListActiveNowPromotion": true,
@@ -1014,7 +1019,8 @@
             "restyleQuestsPreload": true,
             "disableQuestsBadgeOnUserProfiles": false,
             "fetchingQuestsAlert": "discodo",
-            "fetchingQuestsAlertVolume": 100
+            "fetchingQuestsAlertVolume": 100,
+            "completeAchievementQuestsInBackground": false
         },
         "QuestionMarkReplacement": {
             "enabled": false
@@ -1156,7 +1162,8 @@
             "enabled": true,
             "dbSource": "https://userpfp.github.io/UserPFP/source/data.json",
             "preferNitro": true,
-            "databaseSource": "https://userpfp.github.io/UserPFP/source/data.json"
+            "databaseSource": "https://userpfp.github.io/UserPFP/source/data.json",
+            "overrideServerAvatars": true
         },
         "VcNarratorCustom": {
             "enabled": false
@@ -1226,7 +1233,8 @@
             "disableDMContextMenu": false,
             "noMirroredCamera": false,
             "removeActivitySection": false,
-            "showYourOwnActivityButtons": false
+            "showYourOwnActivityButtons": false,
+            "noDefaultHangStatus": false
         },
         "VCSupport": {
             "enabled": true
@@ -1400,10 +1408,17 @@
             "enabled": false
         },
         "UserAreaAPI": {
-            "enabled": false
+            "enabled": true
         },
         "ElementHighlighter": {
             "enabled": false
+        },
+        "MicLoopbackTester": {
+            "enabled": true
+        },
+        "MoreQuickReactions": {
+            "enabled": true,
+            "reactionCount": 5
         }
     },
     "notifications": {
@@ -1417,7 +1432,7 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1766123993866
+        "settingsSyncVersion": 1767143027797
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
