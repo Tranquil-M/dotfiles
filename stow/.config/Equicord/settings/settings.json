@@ -77,7 +77,7 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": false
+            "enabled": true
         },
         "AppleMusicRichPresence": {
             "enabled": false
@@ -561,7 +561,9 @@
             "enabled": false
         },
         "VoiceMessages": {
-            "enabled": false
+            "enabled": true,
+            "echoCancellation": true,
+            "noiseSuppression": true
         },
         "VolumeBooster": {
             "enabled": false
@@ -597,7 +599,12 @@
             "enabled": true
         },
         "Anammox": {
-            "enabled": false
+            "enabled": false,
+            "dms": true,
+            "serverBoost": true,
+            "billing": true,
+            "gift": true,
+            "emojiList": true
         },
         "Animalese": {
             "enabled": false
@@ -606,7 +613,8 @@
             "enabled": false
         },
         "AutoZipper": {
-            "enabled": false
+            "enabled": true,
+            "extensions": ".psd,.blend,.exe,.dmg,.app,.apk,.iso"
         },
         "BannersEverywhere": {
             "enabled": false
@@ -984,7 +992,7 @@
             "onQuestsPage": false,
             "disableQuestsDirectMessagesTab": false,
             "disableQuestsPopupAboveAccountPanel": true,
-            "triggerQuestsRerender": false,
+            "triggerQuestsRerender": true,
             "questButtonBadgeColor": 2842239,
             "disableMembersListActivelyPlayingIcon": true,
             "disableFriendsListActiveNowPromotion": true,
@@ -1378,7 +1386,8 @@
             "preventReconnectIfCallEnded": "both"
         },
         "ExitSounds": {
-            "enabled": false
+            "enabled": true,
+            "soundGuildId": "1408302588860039238"
         },
         "GlobalNicknames": {
             "enabled": false
@@ -1432,7 +1441,7 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1767154649087
+        "settingsSyncVersion": 1767163430518
     },
     "ignoreResetWarning": false,
     "userCssVars": {},

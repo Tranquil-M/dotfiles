@@ -26,7 +26,6 @@ hyprshot
 imagemagick
 imv
 iwd
-jq
 kitty
 less
 localsend-bin
@@ -39,7 +38,6 @@ nitchrevived
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
-nwg-displays
 nwg-look
 otf-font-awesome
 pacman-contrib
