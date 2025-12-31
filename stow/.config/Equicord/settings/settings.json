@@ -984,7 +984,7 @@
             "onQuestsPage": false,
             "disableQuestsDirectMessagesTab": false,
             "disableQuestsPopupAboveAccountPanel": true,
-            "triggerQuestsRerender": true,
+            "triggerQuestsRerender": false,
             "questButtonBadgeColor": 2842239,
             "disableMembersListActivelyPlayingIcon": true,
             "disableFriendsListActiveNowPromotion": true,
@@ -1432,7 +1432,7 @@
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1767143027797
+        "settingsSyncVersion": 1767154649087
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
