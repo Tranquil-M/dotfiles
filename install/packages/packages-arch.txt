@@ -24,9 +24,11 @@ hyprpicker
 hyprpolkitagent
 hyprshot
 imagemagick
+impala
 imv
 iwd
 jq
+jvol
 kitty
 less
 localsend-bin

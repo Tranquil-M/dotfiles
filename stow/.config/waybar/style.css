@@ -30,11 +30,16 @@ tooltip label {
     border-bottom: 3px @on_surface;
 }
 
+#network {
+  font-size: 14px;
+  margin: 0.2rem;
+  padding: 0.5rem 0.0rem;
+}
+
 #clock,
 #battery,
 #pulseaudio,
-#network,
 #wlr\taskbar {
     margin: 0.2rem;
     padding: 0.5rem 0.5rem;
-}
+} 

@@ -1,8 +1,8 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "wlr/taskbar"],
     "modules-center": ["clock"],
-    "modules-right": ["wlr/taskbar", "network", "battery", "backlight", "pulseaudio"],
+    "modules-right": ["network", "battery", "backlight", "pulseaudio"],
     "sway/window": {
         "max-length": 50
     },
@@ -47,19 +47,18 @@
             "default": [" ", " "]
         },
         "scroll-step": 1,
-        "on-click": "pavucontrol",
+        "on-click": "kitty -e jvol",
         "ignored-sinks": ["Easy Effects Sink"]
     },
     "network": {
-        "format": "{ifname}",
-        "format-wifi": "{essid} ",
+        "format": "{icon}", 
+        "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
         "format-ethernet": "{ipaddr}/{cidr} 󰊗",
-        "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-        "tooltip-format-wifi": "{essid} ",
-        "tooltip-format-ethernet": "{ifname} ",
+        "format-disconnected": "󰤭 ", 
+        "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}\nSSID: {essid}\nSignalStrength: {signalStrength}%",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 50,
+        "on-click": "kitty -e impala"
     },
     "wlr/taskbar": {
         "format": "{icon}",

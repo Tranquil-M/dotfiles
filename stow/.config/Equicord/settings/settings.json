@@ -21,10 +21,10 @@
     "enabledThemeLinks": [],
     "themeNames": {},
     "enableReactDevtools": false,
-    "frameless": false,
+    "frameless": true,
     "transparent": false,
     "winCtrlQ": false,
-    "disableMinSize": false,
+    "disableMinSize": true,
     "winNativeTitleBar": false,
     "plugins": {
         "ChatInputButtonAPI": {
@@ -77,7 +77,11 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": true
+            "enabled": true,
+            "anonymiseByDefault": true,
+            "method": 0,
+            "randomisedLength": 7,
+            "spoilerMessages": false
         },
         "AppleMusicRichPresence": {
             "enabled": false
@@ -107,7 +111,8 @@
             "copyRoleColorInProfilePopout": false
         },
         "BetterSessions": {
-            "enabled": false
+            "enabled": true,
+            "backgroundCheck": false
         },
         "BetterSettings": {
             "enabled": false
@@ -116,7 +121,7 @@
             "enabled": false
         },
         "BiggerStreamPreview": {
-            "enabled": false
+            "enabled": true
         },
         "BlurNSFW": {
             "enabled": true,
@@ -124,7 +129,14 @@
             "blurAllChannels": false
         },
         "CallTimer": {
-            "enabled": false
+            "enabled": false,
+            "allCallTimers": true,
+            "showWithoutHover": true,
+            "showRoleColor": true,
+            "trackSelf": true,
+            "showSeconds": true,
+            "watchLargeGuilds": false,
+            "format": "stopwatch"
         },
         "ClearURLs": {
             "enabled": false
@@ -136,7 +148,10 @@
             "enabled": false
         },
         "ConsoleJanitor": {
-            "enabled": false
+            "enabled": true,
+            "disableLoggers": false,
+            "disableSpotifyLogger": true,
+            "whitelistedLoggers": "GatewaySocket; Routing/Utils"
         },
         "ConsoleShortcuts": {
             "enabled": false
@@ -172,7 +187,8 @@
             "dearrowByDefault": true
         },
         "Decor": {
-            "enabled": false
+            "enabled": true,
+            "baseUrl": "https://decor.fieryflames.dev"
         },
         "DisableCallIdle": {
             "enabled": false
@@ -377,9 +393,6 @@
         "OnePingPerDM": {
             "enabled": false
         },
-        "Oneko": {
-            "enabled": false
-        },
         "OpenInApp": {
             "enabled": false
         },
@@ -402,7 +415,7 @@
             "enabled": false
         },
         "PlainFolderIcon": {
-            "enabled": false
+            "enabled": true
         },
         "PlatformIndicators": {
             "enabled": false
@@ -519,7 +532,11 @@
             "enabled": false
         },
         "TypingTweaks": {
-            "enabled": false
+            "enabled": true,
+            "amITyping": true,
+            "alternativeFormatting": true,
+            "showRoleColors": true,
+            "showAvatars": true
         },
         "Unindent": {
             "enabled": false
@@ -561,7 +578,9 @@
             "enabled": false
         },
         "VoiceMessages": {
-            "enabled": true
+            "enabled": true,
+            "echoCancellation": true,
+            "noiseSuppression": true
         },
         "VolumeBooster": {
             "enabled": false
@@ -580,12 +599,7 @@
         },
         "AllCallTimers": {
             "enabled": true,
-            "showWithoutHover": true,
-            "watchLargeGuilds": false,
-            "format": "stopwatch",
-            "showSeconds": true,
-            "showRoleColor": true,
-            "trackSelf": true
+            "format": "stopwatch"
         },
         "AltKrispSwitch": {
             "enabled": false
@@ -593,11 +607,8 @@
         "AlwaysExpandProfiles": {
             "enabled": true
         },
-        "AmITyping": {
-            "enabled": true
-        },
         "Anammox": {
-            "enabled": false,
+            "enabled": true,
             "dms": true,
             "serverBoost": true,
             "billing": true,
@@ -605,7 +616,13 @@
             "emojiList": true
         },
         "Animalese": {
-            "enabled": false
+            "enabled": false,
+            "volume": 0.5,
+            "speed": 1,
+            "pitch": 1,
+            "messageLengthLimit": 5000,
+            "processOwnMessages": true,
+            "soundQuality": "high"
         },
         "AtSomeone": {
             "enabled": false
@@ -660,7 +677,51 @@
             "enabled": false
         },
         "ChannelTabs": {
-            "enabled": false
+            "enabled": false,
+            "tabBarPosition": "top",
+            "showBookmarkBar": true,
+            "widerTabsAndBookmarks": false,
+            "tabWidthScale": 100,
+            "enableNumberKeySwitching": true,
+            "numberKeySwitchCount": 3,
+            "enableCloseTabShortcut": true,
+            "enableNewTabShortcut": true,
+            "enableTabCycleShortcut": true,
+            "closeTabKeybind": "CTRL+W",
+            "newTabKeybind": "CTRL+T",
+            "cycleTabForwardKeybind": "CTRL+TAB",
+            "cycleTabBackwardKeybind": "CTRL+SHIFT+TAB",
+            "animationHover": true,
+            "animationSelection": true,
+            "animationDragDrop": true,
+            "animationEnterExit": true,
+            "animationIconPop": true,
+            "animationCloseRotation": true,
+            "animationPlusPulse": true,
+            "animationMentionGlow": true,
+            "animationCompactExpand": true,
+            "animationSelectedBorder": true,
+            "animationSelectedBackground": true,
+            "animationTabShadows": true,
+            "animationTabPositioning": true,
+            "animationResizeHandle": true,
+            "animationQuestsActive": true,
+            "compactAutoExpandSelected": true,
+            "compactAutoExpandOnHover": true,
+            "newTabButtonBehavior": true,
+            "bookmarksIndependentFromTabs": true,
+            "switchToExistingTab": false,
+            "createNewTabIfNotExists": false,
+            "onStartup": "nothing",
+            "oneTabPerServer": false,
+            "maxOpenTabs": 0,
+            "openNewTabsInCompactMode": false,
+            "renderAllTabs": false,
+            "showTabNumbers": false,
+            "tabNumberPosition": "left",
+            "showResizeHandle": true,
+            "noPomeloNames": false,
+            "showStatusIndicators": true
         },
         "CharacterCounter": {
             "enabled": false
@@ -693,7 +754,26 @@
             "enabled": false
         },
         "CustomFolderIcons": {
-            "enabled": false
+            "enabled": false,
+            "folderIcons": {
+                "97523644": {
+                    "url": "https://raw.githubusercontent.com/Tranquil-M/permanent-images/refs/heads/main/kitty-slap-kat-slap.gif?token=GHSAT0AAAAAADQF2YHL3DTQUBLEUWFMXLNO2KXJKVQ",
+                    "size": 100
+                },
+                "2745737487": {
+                    "url": "https://raw.githubusercontent.com/Tranquil-M/permanent-images/refs/heads/main/team-teamwork.gif?token=GHSAT0AAAAAADQF2YHK6BKRMAEVGKE5TE6K2KXJJOA",
+                    "size": 100
+                },
+                "3306755467": {
+                    "url": "https://raw.githubusercontent.com/Tranquil-M/permanent-images/refs/heads/main/crazy-cat.gif?token=GHSAT0AAAAAADQF2YHKS2XWTDT77XBCPJYM2KXJITA",
+                    "size": 100
+                },
+                "3928287368": {
+                    "url": "https://raw.githubusercontent.com/Tranquil-M/permanent-images/refs/heads/main/chomp.gif?token=GHSAT0AAAAAADQF2YHKZX67PIG2TXJTGSKG2KXJI5Q",
+                    "size": 100
+                }
+            },
+            "solidIcon": false
         },
         "CustomSounds": {
             "enabled": false
@@ -990,7 +1070,7 @@
             "onQuestsPage": false,
             "disableQuestsDirectMessagesTab": false,
             "disableQuestsPopupAboveAccountPanel": true,
-            "triggerQuestsRerender": false,
+            "triggerQuestsRerender": true,
             "questButtonBadgeColor": 2842239,
             "disableMembersListActivelyPlayingIcon": true,
             "disableFriendsListActiveNowPromotion": true,
@@ -1240,7 +1320,8 @@
             "noMirroredCamera": false,
             "removeActivitySection": false,
             "showYourOwnActivityButtons": false,
-            "noDefaultHangStatus": false
+            "noDefaultHangStatus": false,
+            "refreshSlashCommands": false
         },
         "VCSupport": {
             "enabled": true
@@ -1426,20 +1507,33 @@
         "MoreQuickReactions": {
             "enabled": true,
             "reactionCount": 5
+        },
+        "CursorBuddy": {
+            "enabled": false,
+            "buddy": "fathorse",
+            "speed": 10,
+            "fps": 30,
+            "size": 150,
+            "fade": true,
+            "freeroam": true,
+            "shake": false
+        },
+        "ContextMenuAPI": {
+            "enabled": true
         }
     },
     "notifications": {
         "timeout": 5000,
-        "position": "bottom-right",
+        "position": "top-right",
         "useNative": "not-focused",
-        "missed": true,
+        "missed": false,
         "logLimit": 50
     },
     "cloud": {
         "authenticated": true,
         "url": "https://cloud.equicord.org/",
         "settingsSync": true,
-        "settingsSyncVersion": 1767231498282
+        "settingsSyncVersion": 1767425771639
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
