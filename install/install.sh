@@ -108,6 +108,7 @@ sudo systemctl enable sddm.service
 
 echo "Removing unneccesary dependencies..."
 if command -v pacman >/dev/null 2>&1; then
+  sudo pywalfox install
   mapfile -t orphans < <(pacman -Qtdq 2>/dev/null || true)
 
   if [ ${#orphans[@]} -eq 0 ]; then

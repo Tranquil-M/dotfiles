@@ -18,6 +18,7 @@ alias yayfind="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S
 alias pacrm="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
 alias clear="clear; nitchrevived"
 alias cd='z'
+alias rmorphan="sudo pacman -Rns $(pacman -Qtdq)"
 
 # Customizing user prompt
 PS1='\W | \u >> '
