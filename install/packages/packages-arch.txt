@@ -9,6 +9,7 @@ btop
 cmake
 cpio
 discord
+easyeffects
 efibootmgr
 equicord-installer-bin
 eza

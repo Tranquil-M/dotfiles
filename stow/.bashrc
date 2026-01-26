@@ -25,3 +25,5 @@ fi
 # Customizing user prompt
 PS1='\W | \u >> '
 clear
+
+export PATH=$PATH:/home/beepew/.spicetify
