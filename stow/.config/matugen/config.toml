@@ -69,6 +69,11 @@ output_path = '~/.cache/wal/base46-dark.lua'
 input_path = '~/.config/nvim/pywal/matugen.lua'
 output_path = '~/.cache/wal/base46-light.lua'
 
+[templates.btop]
+input_path = '~/.config/matugen/templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
+
 [templates.pywal]
 input_path = '~/.config/nvim/pywal/waltemplate'
 output_path = '~/.cache/wal/colors'
