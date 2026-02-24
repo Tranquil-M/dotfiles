@@ -20,46 +20,41 @@ This is a repository of my preferred hyprland setup, which is primarly used on A
 
 | Window |
 | - |
-| ![Default Color Scheme](https://raw.githubusercontent.com/Tranquil-M/dotfiles/refs/heads/master/Sample/Blue%20Accent%20Window.png) | 
+| ![Default Color Scheme](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Window.png?raw=true) | 
 
 | Rofi |
 | - |
-| ![Application Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Rofi.png?raw=true) |
+| ![Application Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Rofi%206.png?raw=true) |
 
 | Wallpaper Selector |
 | - |
-| ![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20Wallpaper%20Selector.png?raw=true) | 
+| ![Wallpaper Selector](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Wallpaper%20Selector.png?raw=true) | 
 
 | Notification Manager |
 | - |
-| ![SwayNC](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Blue%20NC.png?raw=true) | 
+| ![SwayNC](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Notification%20Center.png?raw=true) | 
 
 | Wlogout |
 | - |
-| ![Wlogout](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Wlogout.png?raw=true) | 
+| ![Wlogout](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/WLogout.png?raw=true) | 
 
 | Other Wallpaper Colors |
 | - |
-| ![Snoopy Yellow](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Snoopy%20Yellow.png?raw=true) ![Cat Pink](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Pink.png?raw=true) ![Cat Club Green](https://github.com/Tranquil-M/dotfiles/blob/master/Sample/Cat%20Club%20Green.png?raw=true) |
+| ![Minecraft Purple](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Purple.png?raw=true) ![Cat Pink](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Pink.png?raw=true) ![Cat Club Green](https://github.com/Tranquil-M/dotfiles-hypr/blob/master/Sample/Green.png?raw=true) |
+
+> [!IMPORTANT]
+> All wallpaper colors are completely adaptive! It changes everything, all just depends on what wallpaper you are using.
 
 <a name="install">
 
 ## Installation
 
-1. Install the git cli tool
-    <details open>
-      <summary>Arch Linux</summary>
-      
-        sudo pacman -Sy git
-          
-    </details>
-
-2. Clone this repository into your home directory
+1. Clone this repository into your home directory
     ```bash
-    git clone https://github.com/Tranquil-M/dotfiles; cd dotfiles
+    git clone https://github.com/Tranquil-M/dotfiles .dots; cd .dots
     ```
 
-3. Run the install script and let it do all the dirty work.
+1. Run the install script and let it do all the dirty work.
     ```bash
     bash ./install/install.sh
     ```
