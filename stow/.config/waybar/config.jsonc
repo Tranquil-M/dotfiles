@@ -98,8 +98,8 @@
     },
     "backlight": {
         "justify": "center",
-	      "format": "{icon} {percentage}%",
-        "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "]
+	      "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"]
     },
     "pulseaudio/slider": {
       "min": 0,

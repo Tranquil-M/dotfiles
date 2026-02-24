@@ -34,20 +34,12 @@ tooltip label {
     border-bottom: 3px @on_surface;
 }
 
-#pulseaudio-slider {
-    padding: 0;
-    margin: 0;
-}
 #pulseaudio-slider slider {
     min-height: 0.05rem;
     min-width: 0.05rem;
-    opacity: 0;
-    border: none;
-    box-shadow: none;
 }
 #pulseaudio-slider trough {
     min-height: 2rem;
     min-width: 0.05rem;
-    border-radius: 5px;
-    background: @inverse_on_surface;
+    border-radius: 2px;
 }
