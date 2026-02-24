@@ -1,23 +1,32 @@
 {
-    "layer": "top",
+    "layer": "bottom",
+    "position": "left",
+    "margin-left": 2,
+    "margin-right": 2,
+    "margin-top": 2,
+    "margin-bottom": 2,
     "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": ["clock"],
     "modules-right": ["wlr/taskbar", "network", "battery", "backlight", "pulseaudio"],
     "sway/window": {
+        "justify": "center",
         "max-length": 50
     },
     "battery": {
-        "format": "{capacity}% {icon}",
+        "justify": "center",
+        "format": "{capacity}%\n{icon}",
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "clock": {
-        "format":"{:%b %d  %I:%M %p}",
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+        "format":"{:%b\n%d\n\n%I\n%M}",
+        "format-alt": "{:%a\n%b %d\n%H:%M}",
+        "justify": "center"
     },
     "hyprland/workspaces": {
+        "justify": "center",
         "format": "{icon}",
         "format-icons": {
-            "active": " "
+            "active": "-*-"
         }, 
         "all-outputs": false,
         "active_only": false,
@@ -27,12 +36,14 @@
         }
     },
     "hyprland/window": {
+        "justify": "center",
         "format": "{}",
         "separate-outputs": true
     },
     "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} ",
+        "justify": "center",
+        "format": "{icon}",
+        "format-bluetooth": "{icon}",
         "format-muted": " ",
         "format-icons": {
             "alsa_output.pci-0000_00_1f.3.analog-stereo": " ",
@@ -51,6 +62,7 @@
         "ignored-sinks": ["Easy Effects Sink"]
     },
     "network": {
+        "justify": "center",
         "format": "{icon}", 
         "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
         "format-ethernet": "{ipaddr}/{cidr} 󰊗",
@@ -61,6 +73,7 @@
         "on-click": "kitty -e impala"
     },
     "wlr/taskbar": {
+        "justify": "center",
         "format": "{icon}",
         "icon-size": 14,
         "icon-theme": "Numix-Circle",
@@ -68,10 +81,9 @@
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
-        
         ],
         "app_ids-mapping": {
-        "firefoxdeveloperedition": "firefox-developer-edition"
+          "firefoxdeveloperedition": "firefox-developer-edition"
         },
         "rewrite": {
             "Firefox Web Browser": "Firefox",
@@ -79,15 +91,18 @@
         }
     },
     "tray": {
+        "justify": "center",
         "icon-size": 0.3,
         "spacing": 10
     },
     "backlight": {
+        "justify": "center",
 	      "device": "intel_backlight",
-	      "format": "{percent}% {icon}",
+	      "format": "{icon}",
         "icons": ["󰃞 ", "󰃟 ", "󰃠 "]
     },
     "custom/updates": {
+      "justify": "center",
       "format": "{text}",
       "exec": "~/.config/waybar/scripts/package-updates.sh",
       "return-type": "json",

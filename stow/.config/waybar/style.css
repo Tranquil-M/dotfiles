@@ -1,15 +1,19 @@
 @import "colors.css";
 
 * {
-    border: none;
-    border-radius: 0;
+    border-radius: 2;
     font-family: JetBrainsMono Nerd Font;
+    min-height: 0;
     font-size: 0.8rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
 }
 
 window#waybar {
     background: @background;
     color: @on_surface;
+    border: 1px solid @primary;
+    margin: 0px -50px;
 }
 
 tooltip {
@@ -29,18 +33,3 @@ tooltip label {
     background: @on_secondary;
     border-bottom: 3px @on_surface;
 }
-
-#network {
-  font-size: 14px;
-  margin: 0.2rem;
-  padding: 0.5rem 0.0rem;
-}
-
-#clock,
-#battery,
-#pulseaudio,
-#tray,
-#wlr\taskbar {
-    margin: 0.2rem;
-    padding: 0.5rem 0.5rem;
-} 
