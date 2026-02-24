@@ -50,5 +50,5 @@ wall_selection=$(
 )
 
 [[ -n "$wall_selection" ]] || exit 1
-matugen image "${wall_dir}/${wall_selection}" --source-color-index 0
+matugen image "${wall_dir}/${wall_selection}" --source-color-index 0 || matugen image "${wall_dir}/${wall_selection}"
 swww img --resize crop --transition-type center "${wall_dir}/${wall_selection}"
