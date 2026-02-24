@@ -14,7 +14,7 @@
     },
     "battery": {
         "justify": "center",
-        "format": "{capacity}%\n{icon}",
+        "format": "{icon}\n{capacity}",
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "clock": {
@@ -98,7 +98,6 @@
     },
     "backlight": {
         "justify": "center",
-	      "device": "intel_backlight",
 	      "format": "{icon}",
         "icons": ["󰃞 ", "󰃟 ", "󰃠 "]
     },
