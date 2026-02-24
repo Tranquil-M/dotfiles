@@ -49,5 +49,5 @@ tooltip label {
     min-height: 2rem;
     min-width: 0.05rem;
     border-radius: 5px;
-    background: @background;
+    background: @inverse_on_surface;
 }

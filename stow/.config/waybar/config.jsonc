@@ -14,8 +14,8 @@
     },
     "battery": {
         "justify": "center",
-        "format": "{icon}\n{capacity}",
-        "format-icons": [" ", " ", " ", " ", " "]
+        "format": "{icon} {capacity}",
+        "format-icons": ["", "", "", "", ""]
     },
     "clock": {
         "format":"{:%b\n%d\n\n%I\n%M}",
@@ -98,8 +98,8 @@
     },
     "backlight": {
         "justify": "center",
-	      "format": "{icon}",
-        "icons": ["󰃞 ", "󰃟 ", "󰃠 "]
+	      "format": "{icon} {percentage}%",
+        "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "]
     },
     "pulseaudio/slider": {
       "min": 0,
