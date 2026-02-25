@@ -100,34 +100,7 @@ echo "Installing SDDM Silent Theme..."
 cd ~
 git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
 cd SilentSDDM
-rm metadata.desktop
-echo "; https://github.com/uiriansan/SilentSDDM
-
-[SddmGreeterTheme]
-Name=Silent
-Type=sddm-theme
-Description=A very customizable SDDM theme that actually looks good.
-License=GPL-3.0-or-later
-Version=1.4.0
-Theme-Id=silent
-Theme-API=2.0
-MainScript=Main.qml
-Screenshot=docs/previews/default.png
-TranslationsDirectory=translations
-QtVersion=6
-
-#ConfigFile=configs/default.conf
-# ConfigFile=configs/default-left.conf
-# ConfigFile=configs/default-right.conf
-# ConfigFile=configs/rei.conf
-# ConfigFile=configs/ken.conf
-# ConfigFile=configs/silvia.conf
-# ConfigFile=configs/everforest.conf
-# ConfigFile=configs/catppuccin-latte.conf
-# ConfigFile=configs/catppuccin-frappe.conf
-ConfigFile=configs/catppuccin-macchiato.conf
-# ConfigFile=configs/catppuccin-mocha.conf
-# ConfigFile=configs/nord.conf" >> metadata.desktop
+sed -i 's|^ConfigFile=.*|ConfigFile="configs/catppuccin-macchiato.conf"|' metadata.desktop
 bash ./install.sh
 echo "Installed successfully!"
 cd ..
