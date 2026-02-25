@@ -55,6 +55,9 @@ python-pywal
 python-pywalfox
 python-watchdog
 qt5-wayland
+qt6-multimedia
+qt6-svg
+qt6-virtualkeyboard
 qt6-wayland
 rofi
 rofi-emoji
