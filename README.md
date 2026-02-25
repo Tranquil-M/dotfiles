@@ -92,10 +92,7 @@ These dotfiles are meant to be basic, and fit everything that I need in my daily
 ```
 * An application launcher, file exporer, ssh window, and window switcher all within Rofi.
 * A notification center/viewer utilizing SwayNC
-* A custom discord theme, utilizing Equicord. Discord be manually patched after every update by running the following command in the terminal:
-```
-sudo Equilotl
-```
+* A custom discord theme, utilizing Equicord. No manual patching required.
 * NvChad, the best NeoVim distrobution (imo)
 * Exa, a better list command! (love this sm)
 * Zoxide, a better cd command! (LOVE this sm)
