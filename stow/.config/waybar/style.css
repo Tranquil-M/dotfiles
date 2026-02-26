@@ -38,8 +38,22 @@ tooltip label {
     min-height: 0.05rem;
     min-width: 0.05rem;
 }
+
 #pulseaudio-slider trough {
     min-height: 2rem;
     min-width: 0.05rem;
     border-radius: 2px;
+}
+
+#network:hover,
+#pulseaudio:hover,
+#pulseaudio-slider:hover,
+#custom-launcher_icon:hover,
+#clock:hover {
+  background: @on_secondary;
+  transition: background 0.1s ease-in-out;
+}
+
+.drawer_open #custom-launcher_icon:hover {
+  background: @on_tertiary;
 }
