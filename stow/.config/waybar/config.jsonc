@@ -109,7 +109,7 @@
         "tooltip": false
     },
     "custom/launcher_end_icon": {
-        "format": ":^:",
+        "format": "^",
         "tooltip": false
     },
     "tray": {
