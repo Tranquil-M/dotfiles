@@ -81,6 +81,9 @@ else
   echo "Package list $PKG_FILE not found — skipping package installation."
 fi
 
+echo "Setting defaults..."
+xdg-mime default nemo.desktop inode/directory
+
 # Symlink dotfiles using GNU Stow
 if ! command -v stow >/dev/null 2>&1; then
   echo "GNU Stow not found — please install it manually."
